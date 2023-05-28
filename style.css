@@ -760,6 +760,35 @@ div#preloader {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.article {
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: rgba(42, 42, 206, 0.2) 0px 7px 29px 0px;
+}
+
+.article:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(42, 42, 206, 0.5) 0px 7px 29px 0px;
+}
+
+@media (max-width: 480px) {
+  .article-text,
+  .article-image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .article {
+    transform: none;
+    box-shadow: none;
+    border-top: 3px solid rgba(42, 42, 206, 0.5);
+    border-bottom: 3px solid rgba(42, 42, 206, 0.5);
+  }
+  
+}
+
+
 .services-icon {
   color: #444;
   display: inline-block;
@@ -853,8 +882,15 @@ div#preloader {
 
 
 /*--------------------------------------------------------------
-# Team
+# Articles
+
 --------------------------------------------------------------*/
+.articles {
+  border:2px solid blue;
+
+}
+
+
 .team-member {
   background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
   display: block;
