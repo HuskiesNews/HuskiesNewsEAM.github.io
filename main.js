@@ -13,16 +13,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-window.onload = function() {
-  var daysToCompletion = 3; // Number of days until completion
-
-  var currentDate = new Date();
-  var completionDate = new Date(currentDate.getTime() + daysToCompletion * 24 * 60 * 60 * 1000);
-
-  var message = "This website is not yet complete. Please check back in " + daysToCompletion + " days for its completion.\n\nEstimated completion date: " + completionDate.toDateString();
-
-  alert(message);
-};
 
 (function() {
   "use strict";
@@ -206,7 +196,7 @@ window.onload = function() {
     });
   
     new bootstrap.Carousel(document.getElementById('heroCarousel'), {
-      interval: 20000
+      interval: 50000
     });
   });
   
